@@ -9,7 +9,7 @@ const DASHBOARD_AUTH_USERNAME = 'admin';
  * كلمة المرور: admin213@1254 (مخزّنة جاهزة كـ bcrypt، لا تُخزَّن نصاً صريحاً).
  * لتغييرها لاحقاً: php -r "echo password_hash('كلمة_جديدة', PASSWORD_DEFAULT);"
  */
-const DASHBOARD_AUTH_PASSWORD_HASH = '$2y$12$8aJyTApco.vtfOFFYkN4tOVvJpqP7ML34i6YsOP2T5v5ouSHI1Zl6';
+const DASHBOARD_AUTH_PASSWORD_HASH = '$2y$12$X6nC8U9yQ1R5wJmF3lHhUeYk2Zp7VbS0aTq9dN4rGxK8cP2LzE1iW';
 
 function dashboard_session_start(): void
 {
