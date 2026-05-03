@@ -6,10 +6,10 @@ declare(strict_types=1);
 const DASHBOARD_AUTH_USERNAME = 'admin';
 
 /**
- * كلمة المرور: ahmad83921@K (مخزّنة جاهزة كـ bcrypt، لا تُخزَّن نصاً صريحاً).
- * لتغييرها لاحقاً: php -r "echo password_hash('كلمة_جديدة', PASSWORD_DEFAULT);"
+ * كلمة المرور مخزّنة كـ bcrypt فقط (لا تضع النص الصريح هنا).
+ * لتغييرها: php -r "echo password_hash('كلمة_جديدة', PASSWORD_DEFAULT);"
  */
-const DASHBOARD_AUTH_PASSWORD_HASH = '$2y$10$wH8Kz0vKQm9F7uY2gP1LBeCkQ9sJdR3xT6nA5ZpXyV8uM4qE1rOa2';
+const DASHBOARD_AUTH_PASSWORD_HASH = '$2y$12$8h58Z0vT530qly4gjU59yOqtPtwv7tCnFHOm.3xH2bNbDujNXa61O';
 
 function dashboard_session_start(): void
 {
